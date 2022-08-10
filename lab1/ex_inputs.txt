@@ -1,0 +1,50 @@
+
+	function F(x):
+
+gradient descent with batch mode and with range for the starting point:
+f; 2; -2; -2; 4; g; 15; -20; 100; 0.05; 5; 2; 4
+
+gradient descent with batch mode and with the exact starting point value (will provide an error that it cannot be done):
+f; 2; -2; -2; 4; g; 15; -20; 100; 0.05; 5; 2; n
+
+newton's with batch mode and with range for the starting point
+f; 2; -2; -2; 4; n; 15; -20; 100; 0.05; 5; 2; 4
+
+gradient descent in normal mode and with range for the starting point
+f; 2; -2; -2; 4; g; 15; -20; 100; 0.05; 1; 2; 4
+
+gradient descent in normal mode and with exact starting point value
+f; 2; -2; -2; 4; g; 15; -20; 100; 0.05; 1; 2; n
+
+newton's in normal mode and with range for the starting point
+f; 2; -2; -2; 4; n; 15; -20; 100; 0.05; 1; 2; 4
+
+newton's in normal mode and with exact starting point value
+f; 2; -2; -2; 4; n; 15; -20; 100; 0.05; 1; 2; n
+
+
+
+	function G(x):
+
+gradient descent with batch mode enabled and with range for the starting point:
+g; 2; [[1,1]]; [[8,4],[4,4]]; g; 15; [[-10,-10]]; 100; 0.05; 5; 2; 4
+
+gradient descent with batch mode enabled and with exact starting point vector (will provide an error that it cannot be done):
+g; 2; [[1,1]]; [[8,4],[4,4]]; g; 15; [[-10,-10]]; 100; 0.05; 5; [[2,2]]; n
+
+newton's with batch mode enabled and with range for the starting point:
+g; 2; [[1,1]]; [[8,4],[4,4]]; n; 15; [[-10,-10]]; 100; 0.05; 5; 2; 4
+
+gradient descent in normal mode and with exact starting point vector:
+g; 2; [[1,1]]; [[8,4],[4,4]]; g; 15; [[-10,-10]]; 100; 0.05; 1; [[2,2]]; n
+
+newton's in normal mode with exact starting point vector:
+g; 2; [[1,1]]; [[8,4],[4,4]]; n; 15; [[-10,-10]]; 100; 0.05; 1; [[2,2]]; n
+
+newton's in normal mode with range for the starting point:
+g; 2; [[1,1]]; [[8,4],[4,4]]; n; 15; [[-10,-10]]; 100; 0.05; 1; 2; 4
+
+gradient descent in normal mode with range for the starting point:
+g; 2; [[1,1]]; [[8,4],[4,4]]; g; 15; [[-10,-10]]; 100; 0.05; 1; 2; 4
+
+
